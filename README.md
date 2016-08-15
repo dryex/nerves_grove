@@ -15,7 +15,10 @@ Examples
 --------
 
 ```elixir
-...
+alias Nerves.Grove
+
+{:ok, pid} = Grove.Button.start_link(2)
+state = Grove.Button.read(pid)
 ```
 
 Installation
