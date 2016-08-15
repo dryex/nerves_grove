@@ -18,12 +18,17 @@ Examples
 alias Nerves.Grove
 
 # Button
-{:ok, pid} = Grove.Button.start_link(2)
+{:ok, pid} = Grove.Button.start_link(pin)
 state = Grove.Button.read(pid)  # check if button is pressed
 
 # Buzzer
-{:ok, pid} = Grove.Buzzer.start_link(117)
+{:ok, pid} = Grove.Buzzer.start_link(pin)
 Grove.Buzzer.beep(pid, 0.1)     # make some noise for 100 ms
+
+# Relay
+{:ok, pid} = Grove.Relay.start_link(pin)
+Grove.Relay.on(pid)             # start current flow
+Grove.Relay.off(pid)            # stop current flow
 ```
 
 Reference
@@ -35,14 +40,17 @@ https://hexdocs.pm/nerves_grove/
 
 | Module           | Type    | Device                      |
 | :--------------- | :------ | :-------------------------- |
-| [`Grove.Button`] | Digital | Seeed Studio Grove [Button] |
-| [`Grove.Buzzer`] | Digital | Seeed Studio Grove [Buzzer] |
+| [`Grove.Button`] | Digital | Seeed Studio [Grove Button] |
+| [`Grove.Buzzer`] | Digital | Seeed Studio [Grove Buzzer] |
+| [`Grove.Relay`]  | Digital | Seeed Studio [Grove Relay]  |
 
 [`Grove.Button`]: https://hexdocs.pm/nerves_grove/Nerves.Grove.Button.html
 [`Grove.Buzzer`]: https://hexdocs.pm/nerves_grove/Nerves.Grove.Buzzer.html
+[`Grove.Relay`]:  https://hexdocs.pm/nerves_grove/Nerves.Grove.Relay.html
 
-[Button]:         http://wiki.seeedstudio.com/wiki/Grove_-_Button
-[Buzzer]:         http://wiki.seeedstudio.com/wiki/Grove_-_Buzzer
+[Grove Button]:   http://wiki.seeedstudio.com/wiki/Grove_-_Button
+[Grove Buzzer]:   http://wiki.seeedstudio.com/wiki/Grove_-_Buzzer
+[Grove Relay]:    http://wiki.seeedstudio.com/wiki/Grove_-_Relay
 
 Installation
 ------------
