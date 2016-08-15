@@ -3,6 +3,8 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [HEAD]
+### Added
+- Added `Grove.Buzzer.on/1` and `Grove.Buzzer.off/1`.
 
 ## [0.2.0] - 2016-08-15
 ### Added
