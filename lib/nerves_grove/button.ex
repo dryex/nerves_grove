@@ -5,10 +5,12 @@ defmodule Nerves.Grove.Button do
   http://wiki.seeedstudio.com/wiki/Grove_-_Button
   """
 
+  @spec start_link(pos_integer) :: {:ok, pid} | {:error, any}
   def start_link(pin) do
-    {:ok, _pid} = Gpio.start_link(pin, :input)
+    Gpio.start_link(pin, :input)
   end
 
+  @spec read(pid) :: boolean
   def read(pid) do
     Gpio.read(pid) == 1
   end
