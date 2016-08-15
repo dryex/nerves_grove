@@ -21,6 +21,11 @@ alias Nerves.Grove
 state = Grove.Button.read(pid)
 ```
 
+Reference
+---------
+
+https://hexdocs.pm/nerves_grove/
+
 Installation
 ------------
 
