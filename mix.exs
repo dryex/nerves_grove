@@ -49,7 +49,8 @@ defmodule Nerves.Grove.Mixfile do
   end
 
   defp deps do
-    [{:credo,       ">= 0.0.0", only: [:dev, :test]},
+    [{:elixir_ale,  "~> 0.5.5"},
+     {:credo,       ">= 0.0.0", only: [:dev, :test]},
      {:dialyxir,    ">= 0.0.0", only: [:dev, :test]},
      {:earmark,     ">= 0.0.0", only: :dev},
      {:ex_doc,      ">= 0.0.0", only: :dev},
