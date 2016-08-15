@@ -2,7 +2,7 @@
 
 defmodule Nerves.Grove.Buzzer do
   @moduledoc """
-  http://www.seeedstudio.com/wiki/Grove_-_Buzzer
+  http://wiki.seeedstudio.com/wiki/Grove_-_Buzzer
   """
 
   def start_link(pin) do

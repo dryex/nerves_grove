@@ -8,7 +8,7 @@ Nerves.Grove
 [![Hex.pm downloads](https://img.shields.io/hexpm/dt/nerves_grove.svg)](https://hex.pm/packages/nerves_grove)
 [![Gratipay donations](https://img.shields.io/gratipay/user/bendiken.svg)](https://gratipay.com/~bendiken/)
 
-[Grove](http://www.seeedstudio.com/wiki/Grove_System) module support for
+[Grove](http://wiki.seeedstudio.com/wiki/Grove_System) module support for
 [Nerves](http://nerves-project.org/).
 
 Examples
@@ -41,8 +41,8 @@ https://hexdocs.pm/nerves_grove/
 [`Grove.Button`]: https://hexdocs.pm/nerves_grove/Nerves.Grove.Button.html
 [`Grove.Buzzer`]: https://hexdocs.pm/nerves_grove/Nerves.Grove.Buzzer.html
 
-[Button]:         http://www.seeedstudio.com/wiki/Grove_-_Button
-[Buzzer]:         http://www.seeedstudio.com/wiki/Grove_-_Buzzer
+[Button]:         http://wiki.seeedstudio.com/wiki/Grove_-_Button
+[Buzzer]:         http://wiki.seeedstudio.com/wiki/Grove_-_Buzzer
 
 Installation
 ------------

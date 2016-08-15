@@ -2,7 +2,7 @@
 
 defmodule Nerves.Grove.Button do
   @moduledoc """
-  http://www.seeedstudio.com/wiki/Grove_-_Button
+  http://wiki.seeedstudio.com/wiki/Grove_-_Button
   """
 
   def start_link(pin) do
