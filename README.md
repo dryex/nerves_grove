@@ -26,6 +26,16 @@ Reference
 
 https://hexdocs.pm/nerves_grove/
 
+### Modules
+
+| Module           | Type    | Device                      |
+| :--------------- | :------ | :-------------------------- |
+| [`Grove.Button`] | Digital | Seeed Studio Grove [Button] |
+
+[`Grove.Button`]: https://hexdocs.pm/nerves_grove/Nerves.Grove.Button.html
+
+[Button]:         http://www.seeedstudio.com/wiki/Grove_-_Button
+
 Installation
 ------------
 
