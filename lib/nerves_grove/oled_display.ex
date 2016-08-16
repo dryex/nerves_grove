@@ -153,7 +153,11 @@ defmodule Nerves.Grove.OLED.Display do
 
   @spec clear(pid) :: :ok
   def clear(pid) do
-    (1..(96 * 48)) |> Enum.each(fn _ -> send_data(pid, 0x00) end) # TODO: optimize this
+    # TODO: optimize more once https://github.com/fhunleth/elixir_ale/issues/20 is fixed.
+    block = :erlang.list_to_binary([@data_mode, String.duplicate("\x00", 16)])
+    Enum.each(1..48, fn _ ->
+      Enum.each(1..div(96, 16), fn _ -> I2c.write(pid, block) end)
+    end)
   end
 
   @spec set_text_position(pid, byte, byte) :: any
