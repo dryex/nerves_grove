@@ -109,6 +109,8 @@ defmodule Nerves.Grove.OLED.Display do
      {0x00,0x02,0x01,0x01,0x02,0x01,0x00,0x00},
      {0x00,0x02,0x05,0x05,0x02,0x00,0x00,0x00}}
 
+  use Bitwise
+
   @spec start_link(byte) :: {:ok, pid} | {:error, any}
   def start_link(address \\ @default_address) do
     I2c.start_link("i2c-2", address)
@@ -147,6 +149,46 @@ defmodule Nerves.Grove.OLED.Display do
   @spec off(pid) :: :ok
   def off(pid) do
     send_command(pid, 0xAE)
+  end
+
+  @spec clear(pid) :: :ok
+  def clear(pid) do
+    (1..(96 * 48)) |> Enum.each(fn _ -> send_data(pid, 0x00) end) # TODO: optimize this
+  end
+
+  @spec set_text_position(pid, byte, byte) :: any
+  def set_text_position(pid, row, column) do
+    set_column_address(pid, 0x08 + column * 4, 0x08 + 47)
+    set_row_address(pid, 0x00 + row * 8, 0x07 + row * 8)
+  end
+
+  @spec put_string(pid, <<>>) :: :ok
+  def put_string(_pid, <<>>), do: nil
+
+  @spec put_string(pid, binary) :: any
+  def put_string(pid, <<head, rest :: binary>>) do
+    put_char(pid, head)
+    put_string(pid, rest)
+  end
+
+  @spec put_char(pid, byte) :: any
+  def put_char(pid, char) when is_integer(char) and char in 32..127 do
+    c = char - 32
+    Enum.each([0, 2, 4, 6], fn i ->
+      Enum.each(0..7, fn j ->
+        glyph = elem(@default_font, c)
+        bit1 = band(bsr(elem(glyph, i), j), 0x01)
+        bit2 = band(bsr(elem(glyph, i + 1), j), 0x01)
+        send_data(pid,
+          bor(if bit1 != 0 do 0xF0 else 0 end,
+              if bit2 != 0 do 0x0F else 0 end))
+      end)
+    end)
+  end
+
+  @spec put_char(pid, byte) :: any
+  def put_char(pid, char) when is_integer(char) and char in 0..31 do
+    put_char(pid, ?\s) # replace with a space
   end
 
   @spec set_column_address(pid, byte, byte) :: :ok
@@ -209,11 +251,6 @@ defmodule Nerves.Grove.OLED.Display do
   @spec set_activate_scroll(pid, true) :: :ok
   def set_activate_scroll(pid, true) do
     send_command(pid, 0x2F)
-  end
-
-  @spec clear(pid, byte) :: :ok
-  def clear(pid, color \\ 0x00) do
-    (1..(96 * 48)) |> Enum.each(fn _ -> send_data(pid, color) end)
   end
 
   @spec send_commands(pid, <<>>) :: :ok
