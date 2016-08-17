@@ -4,6 +4,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [HEAD] - Unreleased
 ### Added
+
+## [0.4.0] - 2016-08-18
+### Added
 - Added `Grove.I2C.ADC`.
 - Added `Grove.Sensor.Sound`.
 - Added `Grove.Sensor.Temperature`.
@@ -22,6 +25,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - Initial release with support for `Grove.Button`.
 
-[HEAD]:  https://github.com/bendiken/nerves_grove/compare/0.3.0...HEAD
+[HEAD]:  https://github.com/bendiken/nerves_grove/compare/0.4.0...HEAD
+[0.4.0]: https://github.com/bendiken/nerves_grove/compare/0.3.0...0.4.0
 [0.3.0]: https://github.com/bendiken/nerves_grove/compare/0.2.0...0.3.0
 [0.2.0]: https://github.com/bendiken/nerves_grove/compare/0.1.0...0.2.0

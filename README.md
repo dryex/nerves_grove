@@ -114,7 +114,7 @@ Add `nerves_grove` to your list of dependencies in your project's `mix.exs` file
 
 ```elixir
 defp deps do
-  [{:nerves_grove, "~> 0.3.0"}]
+  [{:nerves_grove, "~> 0.4.0"}]
 end
 ```
 
@@ -122,7 +122,7 @@ Alternatively, to pull in the dependency directly from a Git tag:
 
 ```elixir
 defp deps do
-  [{:nerves_grove, github: "bendiken/nerves_grove", tag: "0.3.0"}]
+  [{:nerves_grove, github: "bendiken/nerves_grove", tag: "0.4.0"}]
 end
 ```
 
