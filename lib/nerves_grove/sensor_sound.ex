@@ -15,12 +15,8 @@ defmodule Nerves.Grove.Sensor.Sound do
     I2C.ADC.start_link(address)
   end
 
-  @spec read_value(pid) :: float
-  def read_value(pid, samples \\ 5) when is_pid(pid) do
-    sum = I2C.ADC.read_samples(pid, samples)
-      |> Enum.map(fn sample -> sample / 4095 end)
-      |> Enum.sum
-    avg = sum / samples
-    avg |> Float.round(3)
+  @spec read_value(pid, integer) :: float
+  def read_value(pid, samples \\ 5) when is_pid(pid) and is_integer(samples) do
+    I2C.ADC.read_value(pid, samples) |> Float.round(3)
   end
 end
