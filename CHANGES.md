@@ -2,9 +2,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [HEAD]
+## [HEAD] - Unreleased
 ### Added
 - Added `Grove.Buzzer.on/1` and `Grove.Buzzer.off/1`.
+- Added `Grove.OLED.Display`.
 - Added `Grove.Relay`.
 
 ## [0.2.0] - 2016-08-15
