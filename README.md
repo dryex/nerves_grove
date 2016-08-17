@@ -54,7 +54,7 @@ https://hexdocs.pm/nerves_grove/
 
 [`Grove.Button`]:           https://hexdocs.pm/nerves_grove/Nerves.Grove.Button.html
 [`Grove.Buzzer`]:           https://hexdocs.pm/nerves_grove/Nerves.Grove.Buzzer.html
-[`Grove.OLED.Display`]:     https://hexdocs.pm/nerves_grove/Nerves.Grove.Buzzer.html
+[`Grove.OLED.Display`]:     https://hexdocs.pm/nerves_grove/Nerves.Grove.OLED.Display.html
 [`Grove.Relay`]:            https://hexdocs.pm/nerves_grove/Nerves.Grove.Relay.html
 
 [Grove Button]:             http://wiki.seeedstudio.com/wiki/Grove_-_Button
@@ -69,7 +69,7 @@ Add `nerves_grove` to your list of dependencies in your project's `mix.exs` file
 
 ```elixir
 defp deps do
-  [{:nerves_grove, "~> 0.2.0"}]
+  [{:nerves_grove, "~> 0.3.0"}]
 end
 ```
 
@@ -77,7 +77,7 @@ Alternatively, to pull in the dependency directly from a Git tag:
 
 ```elixir
 defp deps do
-  [{:nerves_grove, github: "bendiken/nerves_grove", tag: "0.2.0"}]
+  [{:nerves_grove, github: "bendiken/nerves_grove", tag: "0.3.0"}]
 end
 ```
 
