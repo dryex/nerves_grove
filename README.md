@@ -25,8 +25,12 @@ state = Grove.Button.read(pid)  # check if button is pressed
 {:ok, pid} = Grove.Buzzer.start_link(pin)
 Grove.Buzzer.beep(pid, 0.1)     # make some noise for 100 ms
 
+# I2C ADC
+{:ok, pid} = Grove.I2C.ADC.start_link(address)
+Grove.I2C.ADC.read_sample(pid)
+
 # OLED Display (96×96)
-{:ok, pid} = Grove.OLED.Display.start_link
+{:ok, pid} = Grove.OLED.Display.start_link(address)
 Grove.OLED.Display.reset(pid)
 Grove.OLED.Display.clear(pid)
 Grove.OLED.Display.set_text_position(pid, 0, 0)
@@ -49,16 +53,19 @@ https://hexdocs.pm/nerves_grove/
 | :--------------------- | :------ | :---------------------------------------- |
 | [`Grove.Button`]       | Digital | Seeed Studio [Grove Button]               |
 | [`Grove.Buzzer`]       | Digital | Seeed Studio [Grove Buzzer]               |
+| [`Grove.I2C.ADC`]      | I2C     | Seeed Studio [Grove I2C ADC]              |
 | [`Grove.OLED.Display`] | I2C     | Seeed Studio [Grove OLED Display 96×96]   |
 | [`Grove.Relay`]        | Digital | Seeed Studio [Grove Relay]                |
 
 [`Grove.Button`]:           https://hexdocs.pm/nerves_grove/Nerves.Grove.Button.html
 [`Grove.Buzzer`]:           https://hexdocs.pm/nerves_grove/Nerves.Grove.Buzzer.html
+[`Grove.I2C.ADC`]:          https://hexdocs.pm/nerves_grove/Nerves.Grove.I2C.ADC.html
 [`Grove.OLED.Display`]:     https://hexdocs.pm/nerves_grove/Nerves.Grove.OLED.Display.html
 [`Grove.Relay`]:            https://hexdocs.pm/nerves_grove/Nerves.Grove.Relay.html
 
 [Grove Button]:             http://wiki.seeedstudio.com/wiki/Grove_-_Button
 [Grove Buzzer]:             http://wiki.seeedstudio.com/wiki/Grove_-_Buzzer
+[Grove I2C ADC]:            http://wiki.seeedstudio.com/wiki/Grove_-_I2C_ADC
 [Grove OLED Display 96×96]: http://wiki.seeedstudio.com/wiki/Grove_-_OLED_Display_1.12%22
 [Grove Relay]:              http://wiki.seeedstudio.com/wiki/Grove_-_Relay
 

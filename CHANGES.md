@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [HEAD] - Unreleased
 ### Added
+- Added `Grove.I2C.ADC`.
 
 ## [0.3.0] - 2016-08-17
 ### Added
