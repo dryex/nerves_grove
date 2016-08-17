@@ -39,4 +39,9 @@ defmodule Nerves.Grove.I2C.ADC do
     >> = I2c.write_read(pid, <<@result_register>>, 2)
     sample
   end
+
+  @spec read_samples(pid, integer) :: [0..4095]
+  def read_samples(pid, count) when is_pid(pid) and is_integer(count) do
+    Enum.map(1..count, fn _ -> read_sample(pid) end)
+  end
 end
