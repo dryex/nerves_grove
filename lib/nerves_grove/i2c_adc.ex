@@ -9,6 +9,7 @@ defmodule Nerves.Grove.I2C.ADC do
   @default_address 0x50
   @result_register 0x00
   @config_register 0x02
+  @v_ref           3.0  # V
 
   @spec start_link(byte) :: {:ok, pid} | {:error, any}
   def start_link(address \\ @default_address) when is_integer(address) do
@@ -33,10 +34,16 @@ defmodule Nerves.Grove.I2C.ADC do
 
   @spec read_value(pid, integer) :: float
   def read_value(pid, samples \\ 5) when is_pid(pid) and is_integer(samples) do
+    read_voltage(pid, samples) / @v_ref
+  end
+
+  @spec read_voltage(pid, integer) :: float
+  def read_voltage(pid, samples \\ 5) when is_pid(pid) and is_integer(samples) do
     sum = read_samples(pid, samples)
       |> Enum.map(fn sample -> sample / 4095 end)
       |> Enum.sum
-    sum / samples
+    avg = sum / samples
+    avg * @v_ref * 2 # FIXME: why is the 2 necessary?
   end
 
   @spec read_samples(pid, integer) :: [0..4095]
