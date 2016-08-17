@@ -83,6 +83,23 @@ https://hexdocs.pm/nerves_grove/
 [Grove Sound Sensor]:          http://wiki.seeedstudio.com/wiki/Grove_-_Sound_Sensor
 [Grove Temperature Sensor]:    http://wiki.seeedstudio.com/wiki/Grove_-_Temperature_Sensor_V1.2
 
+Hardware
+--------
+
+### Seeed Studio [Grove Button](http://wiki.seeedstudio.com/wiki/Grove_-_Button)
+
+### Seeed Studio [Grove Buzzer](http://wiki.seeedstudio.com/wiki/Grove_-_Buzzer)
+
+### Seeed Studio [Grove I2C ADC](http://wiki.seeedstudio.com/wiki/Grove_-_I2C_ADC)
+
+### Seeed Studio [Grove OLED Display 96×96](http://wiki.seeedstudio.com/wiki/Grove_-_OLED_Display_1.12%22)
+
+### Seeed Studio [Grove Relay](http://wiki.seeedstudio.com/wiki/Grove_-_Relay)
+
+### Seeed Studio [Grove Sound Sensor](http://wiki.seeedstudio.com/wiki/Grove_-_Sound_Sensor)
+
+### Seeed Studio [Grove Temperature Sensor](http://wiki.seeedstudio.com/wiki/Grove_-_Temperature_Sensor_V1.2)
+
 Installation
 ------------
 
