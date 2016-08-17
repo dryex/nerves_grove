@@ -6,6 +6,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - Added `Grove.I2C.ADC`.
 - Added `Grove.Sensor.Sound`.
+- Added `Grove.Sensor.Temperature`.
 
 ## [0.3.0] - 2016-08-17
 ### Added

@@ -44,6 +44,10 @@ Grove.Relay.off(pid)            # stop current flow
 # Sound Sensor (via I2C ADC)
 {:ok, pid} = Grove.Sensor.Sound.start_link(address)
 Grove.Sensor.Sound.read_value(pid)
+
+# Temperature Sensor (via I2C ADC)
+{:ok, pid} = Grove.Sensor.Temperature.start_link(address)
+Grove.Sensor.Temperature.read_centigrade(pid)
 ```
 
 Reference
@@ -53,28 +57,31 @@ https://hexdocs.pm/nerves_grove/
 
 ### Modules
 
-| Module                 | Type    | Device                                    |
-| :--------------------- | :------ | :---------------------------------------- |
-| [`Grove.Button`]       | Digital | Seeed Studio [Grove Button]               |
-| [`Grove.Buzzer`]       | Digital | Seeed Studio [Grove Buzzer]               |
-| [`Grove.I2C.ADC`]      | I2C     | Seeed Studio [Grove I2C ADC]              |
-| [`Grove.OLED.Display`] | I2C     | Seeed Studio [Grove OLED Display 96×96]   |
-| [`Grove.Relay`]        | Digital | Seeed Studio [Grove Relay]                |
-| [`Grove.Sensor.Sound`] | Analog  | Seeed Studio [Grove Sound Sensor]         |
+| Module                       | Type    | Device                              |
+| :--------------------------- | :------ | :---------------------------------- |
+| [`Grove.Button`]             | Digital | Seeed [Grove Button]                |
+| [`Grove.Buzzer`]             | Digital | Seeed [Grove Buzzer]                |
+| [`Grove.I2C.ADC`]            | I2C     | Seeed [Grove I2C ADC]               |
+| [`Grove.OLED.Display`]       | I2C     | Seeed [Grove OLED Display 96×96]    |
+| [`Grove.Relay`]              | Digital | Seeed [Grove Relay]                 |
+| [`Grove.Sensor.Sound`]       | Analog  | Seeed [Grove Sound Sensor]          |
+| [`Grove.Sensor.Temperature`] | Analog  | Seeed [Grove Temperature Sensor]    |
 
-[`Grove.Button`]:           https://hexdocs.pm/nerves_grove/Nerves.Grove.Button.html
-[`Grove.Buzzer`]:           https://hexdocs.pm/nerves_grove/Nerves.Grove.Buzzer.html
-[`Grove.I2C.ADC`]:          https://hexdocs.pm/nerves_grove/Nerves.Grove.I2C.ADC.html
-[`Grove.OLED.Display`]:     https://hexdocs.pm/nerves_grove/Nerves.Grove.OLED.Display.html
-[`Grove.Relay`]:            https://hexdocs.pm/nerves_grove/Nerves.Grove.Relay.html
-[`Grove.Sensor.Sound`]:     https://hexdocs.pm/nerves_grove/Nerves.Grove.Sensor.Sound.html
+[`Grove.Button`]:              https://hexdocs.pm/nerves_grove/Nerves.Grove.Button.html
+[`Grove.Buzzer`]:              https://hexdocs.pm/nerves_grove/Nerves.Grove.Buzzer.html
+[`Grove.I2C.ADC`]:             https://hexdocs.pm/nerves_grove/Nerves.Grove.I2C.ADC.html
+[`Grove.OLED.Display`]:        https://hexdocs.pm/nerves_grove/Nerves.Grove.OLED.Display.html
+[`Grove.Relay`]:               https://hexdocs.pm/nerves_grove/Nerves.Grove.Relay.html
+[`Grove.Sensor.Sound`]:        https://hexdocs.pm/nerves_grove/Nerves.Grove.Sensor.Sound.html
+[`Grove.Sensor.Temperature`]:  https://hexdocs.pm/nerves_grove/Nerves.Grove.Sensor.Temperature.html
 
-[Grove Button]:             http://wiki.seeedstudio.com/wiki/Grove_-_Button
-[Grove Buzzer]:             http://wiki.seeedstudio.com/wiki/Grove_-_Buzzer
-[Grove I2C ADC]:            http://wiki.seeedstudio.com/wiki/Grove_-_I2C_ADC
-[Grove OLED Display 96×96]: http://wiki.seeedstudio.com/wiki/Grove_-_OLED_Display_1.12%22
-[Grove Relay]:              http://wiki.seeedstudio.com/wiki/Grove_-_Relay
-[Grove Sound Sensor]:       http://wiki.seeedstudio.com/wiki/Grove_-_Sound_Sensor
+[Grove Button]:                http://wiki.seeedstudio.com/wiki/Grove_-_Button
+[Grove Buzzer]:                http://wiki.seeedstudio.com/wiki/Grove_-_Buzzer
+[Grove I2C ADC]:               http://wiki.seeedstudio.com/wiki/Grove_-_I2C_ADC
+[Grove OLED Display 96×96]:    http://wiki.seeedstudio.com/wiki/Grove_-_OLED_Display_1.12%22
+[Grove Relay]:                 http://wiki.seeedstudio.com/wiki/Grove_-_Relay
+[Grove Sound Sensor]:          http://wiki.seeedstudio.com/wiki/Grove_-_Sound_Sensor
+[Grove Temperature Sensor]:    http://wiki.seeedstudio.com/wiki/Grove_-_Temperature_Sensor_V1.2
 
 Installation
 ------------
