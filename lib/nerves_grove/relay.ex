@@ -2,7 +2,16 @@
 
 defmodule Nerves.Grove.Relay do
   @moduledoc """
-  http://wiki.seeedstudio.com/wiki/Grove_-_Relay
+  Seeed Studio [Grove Relay](http://wiki.seeedstudio.com/wiki/Grove_-_Relay)
+
+  # Example
+
+      alias Nerves.Grove.Relay
+
+      {:ok, pid} = Relay.start_link(pin)
+
+      Relay.on(pid)   # start current flow
+      Relay.off(pid)  # stop current flow
   """
 
   @spec start_link(pos_integer) :: {:ok, pid} | {:error, any}

@@ -2,8 +2,19 @@
 
 defmodule Nerves.Grove.I2C.ADC do
   @moduledoc """
-  http://wiki.seeedstudio.com/wiki/Grove_-_I2C_ADC
+  Seeed Studio [Grove I2C ADC](http://wiki.seeedstudio.com/wiki/Grove_-_I2C_ADC)
+
+  ## Datasheet
+
   http://www.ti.com/lit/ds/snas415f/snas415f.pdf
+
+  # Example
+
+      alias Nerves.Grove.I2C
+
+      {:ok, pid} = I2C.ADC.start_link(address)
+
+      I2C.ADC.read_sample(pid)
   """
 
   @default_address 0x50

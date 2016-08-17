@@ -2,8 +2,22 @@
 
 defmodule Nerves.Grove.OLED.Display do
   @moduledoc """
-  http://wiki.seeedstudio.com/wiki/Grove_-_OLED_Display_1.12%22
+  Seeed Studio [Grove OLED Display 96×96](http://wiki.seeedstudio.com/wiki/Grove_-_OLED_Display_1.12%22)
+
+  ## Datasheet
+
   http://garden.seeedstudio.com/images/8/82/SSD1327_datasheet.pdf
+
+  # Example
+
+      alias Nerves.Grove.OLED
+
+      {:ok, pid} = OLED.Display.start_link(address)
+
+      OLED.Display.reset(pid)
+      OLED.Display.clear(pid)
+      OLED.Display.set_text_position(pid, 0, 0)
+      OLED.Display.put_string(pid, "Hello, world")
   """
 
   @default_address 0x3C

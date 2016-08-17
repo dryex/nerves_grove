@@ -2,8 +2,19 @@
 
 defmodule Nerves.Grove.Sensor.Temperature do
   @moduledoc """
-  http://wiki.seeedstudio.com/wiki/Grove_-_Temperature_Sensor_V1.2
+  Seeed Studio [Grove Temperature Sensor](http://wiki.seeedstudio.com/wiki/Grove_-_Temperature_Sensor_V1.2)
+
+  ## Datasheet
+
   http://wiki.seeedstudio.com/images/a/a1/NCP18WF104F03RC.pdf
+
+  # Example
+
+      alias Nerves.Grove.Sensor
+
+      {:ok, pid} = Sensor.Temperature.start_link(address)
+
+      Sensor.Temperature.read_centigrade(pid)
   """
 
   alias Nerves.Grove.I2C

@@ -2,7 +2,15 @@
 
 defmodule Nerves.Grove.Buzzer do
   @moduledoc """
-  http://wiki.seeedstudio.com/wiki/Grove_-_Buzzer
+  Seeed Studio [Grove Buzzer](http://wiki.seeedstudio.com/wiki/Grove_-_Buzzer)
+
+  # Example
+
+      alias Nerves.Grove.Buzzer
+
+      {:ok, pid} = Buzzer.start_link(pin)
+
+      Buzzer.beep(pid, 0.1)  # make some noise for 100 ms
   """
 
   @spec start_link(pos_integer) :: {:ok, pid} | {:error, any}

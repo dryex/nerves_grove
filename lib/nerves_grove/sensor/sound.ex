@@ -2,8 +2,19 @@
 
 defmodule Nerves.Grove.Sensor.Sound do
   @moduledoc """
-  http://wiki.seeedstudio.com/wiki/Grove_-_Sound_Sensor
+  Seeed Studio [Grove Sound Sensor](http://wiki.seeedstudio.com/wiki/Grove_-_Sound_Sensor)
+
+  ## Datasheet
+
   http://www.ti.com/lit/ds/symlink/lm358.pdf
+
+  # Example
+
+      alias Nerves.Grove.Sensor
+
+      {:ok, pid} = Sensor.Sound.start_link(address)
+
+      Sensor.Sound.read_value(pid)
   """
 
   alias Nerves.Grove.I2C

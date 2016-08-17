@@ -2,7 +2,15 @@
 
 defmodule Nerves.Grove.Button do
   @moduledoc """
-  http://wiki.seeedstudio.com/wiki/Grove_-_Button
+  Seeed Studio [Grove Button](http://wiki.seeedstudio.com/wiki/Grove_-_Button)
+
+  # Example
+
+      alias Nerves.Grove.Button
+
+      {:ok, pid} = Button.start_link(pin)
+
+      state = Button.read(pid)  # check if button is pressed
   """
 
   @spec start_link(pos_integer) :: {:ok, pid} | {:error, any}
