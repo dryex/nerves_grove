@@ -52,7 +52,7 @@ alias Nerves.Grove.I2C
 
 {:ok, pid} = I2C.ADC.start_link(address)
 
-I2C.ADC.read_sample(pid)
+I2C.ADC.read_voltage(pid)
 ```
 
 ### Seeed Studio [Grove LED](http://wiki.seeedstudio.com/wiki/Grove_-_LED)
@@ -80,6 +80,18 @@ OLED.Display.reset(pid)
 OLED.Display.clear(pid)
 OLED.Display.set_text_position(pid, 0, 0)
 OLED.Display.put_string(pid, "Hello, world")
+```
+
+### Seeed Studio [Grove Rotary Angle Sensor](http://wiki.seeedstudio.com/wiki/Grove_-_Rotary_Angle_Sensor)
+
+[`Grove.Potentiometer`]: https://hexdocs.pm/nerves_grove/Nerves.Grove.Potentiometer.html
+
+```elixir
+alias Nerves.Grove.Potentiometer
+
+{:ok, pid} = Potentiometer.start_link(address)
+
+Potentiometer.read_value(pid)
 ```
 
 ### Seeed Studio [Grove Relay](http://wiki.seeedstudio.com/wiki/Grove_-_Relay)

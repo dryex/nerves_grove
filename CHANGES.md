@@ -5,6 +5,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [HEAD] - Unreleased
 ### Added
 - Added `Grove.LED`.
+- Added `Grove.Potentiometer`.
 
 ## [0.4.0] - 2016-08-18
 ### Added
