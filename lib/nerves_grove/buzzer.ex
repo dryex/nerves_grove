@@ -18,7 +18,7 @@ defmodule Nerves.Grove.Buzzer do
     Gpio.start_link(pin, :output)
   end
 
-  @doc "Beeps the buzzer."
+  @doc "Beeps the buzzer for a specified duration."
   @spec beep(pid, number) :: any
   def beep(pid, duration \\ 0.1) do
     duration_in_ms = duration * 1000 |> round
@@ -27,13 +27,13 @@ defmodule Nerves.Grove.Buzzer do
     off(pid)
   end
 
-  @doc "Turns on the buzzer."
+  @doc "Switches on the buzzer, making a lot of noise."
   @spec on(pid) :: any
   def on(pid) do
     Gpio.write(pid, 1)
   end
 
-  @doc "Turns off the buzzer."
+  @doc "Switches off the buzzer, stopping the noise."
   @spec off(pid) :: any
   def off(pid) do
     Gpio.write(pid, 0)

@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [HEAD] - Unreleased
 ### Added
+- Added `Grove.LED`.
 
 ## [0.4.0] - 2016-08-18
 ### Added

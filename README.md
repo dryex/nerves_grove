@@ -55,6 +55,18 @@ alias Nerves.Grove.I2C
 I2C.ADC.read_sample(pid)
 ```
 
+### Seeed Studio [Grove LED](http://wiki.seeedstudio.com/wiki/Grove_-_LED)
+
+[`Grove.LED`]: https://hexdocs.pm/nerves_grove/Nerves.Grove.LED.html
+
+```elixir
+alias Nerves.Grove.LED
+
+{:ok, pid} = LED.start_link(pin)
+
+LED.blink(pid)
+```
+
 ### Seeed Studio [Grove OLED Display 96×96](http://wiki.seeedstudio.com/wiki/Grove_-_OLED_Display_1.12%22)
 
 [`Grove.OLED.Display`]: https://hexdocs.pm/nerves_grove/Nerves.Grove.OLED.Display.html
