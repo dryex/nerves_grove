@@ -19,6 +19,14 @@ https://hexdocs.pm/nerves_grove/
 Supported Hardware
 ------------------
 
+[![Grove Button](https://raw.githubusercontent.com/bendiken/nerves_grove/master/etc/photos/button.png)](https://hexdocs.pm/nerves_grove/Nerves.Grove.Button.html)
+[![Grove Buzzer](https://raw.githubusercontent.com/bendiken/nerves_grove/master/etc/photos/buzzer.png)](https://hexdocs.pm/nerves_grove/Nerves.Grove.Buzzer.html)
+[![Grove I2C ADC](https://raw.githubusercontent.com/bendiken/nerves_grove/master/etc/photos/i2c-adc.png)](https://hexdocs.pm/nerves_grove/Nerves.Grove.I2C.ADC.html)
+[![](https://raw.githubusercontent.com/bendiken/nerves_grove/master/etc/photos/oled-display.png)](https://hexdocs.pm/nerves_grove/Nerves.Grove.OLED.Display.html)
+[![](https://raw.githubusercontent.com/bendiken/nerves_grove/master/etc/photos/relay.png)](https://hexdocs.pm/nerves_grove/Nerves.Grove.Relay.html)
+[![](https://raw.githubusercontent.com/bendiken/nerves_grove/master/etc/photos/sensor-sound.png)](https://hexdocs.pm/nerves_grove/Nerves.Grove.Sensor.Sound.html)
+[![](https://raw.githubusercontent.com/bendiken/nerves_grove/master/etc/photos/sensor-temperature.png)](https://hexdocs.pm/nerves_grove/Nerves.Grove.Sensor.Temperature.html)
+
 ### Seeed Studio [Grove Button](http://wiki.seeedstudio.com/wiki/Grove_-_Button)
 
 [`Grove.Button`]: https://hexdocs.pm/nerves_grove/Nerves.Grove.Button.html
