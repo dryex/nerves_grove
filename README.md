@@ -14,16 +14,27 @@ the [Nerves](http://nerves-project.org/) embedded software framework.
 Supported Hardware
 ------------------
 
-[![Grove Button](https://raw.githubusercontent.com/bendiken/nerves_grove/master/etc/photos/button.png)](https://hexdocs.pm/nerves_grove/Nerves.Grove.Button.html)
-[![Grove Buzzer](https://raw.githubusercontent.com/bendiken/nerves_grove/master/etc/photos/buzzer.png)](https://hexdocs.pm/nerves_grove/Nerves.Grove.Buzzer.html)
-[![Grove I2C ADC](https://raw.githubusercontent.com/bendiken/nerves_grove/master/etc/photos/i2c-adc.png)](https://hexdocs.pm/nerves_grove/Nerves.Grove.I2C.ADC.html)
-[![Grove LED](https://raw.githubusercontent.com/bendiken/nerves_grove/master/etc/photos/led.png)](https://hexdocs.pm/nerves_grove/Nerves.Grove.LED.html)
-[![Grove OLED Display 96×96](https://raw.githubusercontent.com/bendiken/nerves_grove/master/etc/photos/oled-display.png)](https://hexdocs.pm/nerves_grove/Nerves.Grove.OLED.Display.html)
-[![Grove Relay](https://raw.githubusercontent.com/bendiken/nerves_grove/master/etc/photos/relay.png)](https://hexdocs.pm/nerves_grove/Nerves.Grove.Relay.html)
-[![Grove Rotary Angle Sensor](https://raw.githubusercontent.com/bendiken/nerves_grove/master/etc/photos/potentiometer-rotary.png)](https://hexdocs.pm/nerves_grove/Nerves.Grove.Potentiometer.html)
-[![Grove Slide Potentiometer](https://raw.githubusercontent.com/bendiken/nerves_grove/master/etc/photos/potentiometer-slide.png)](https://hexdocs.pm/nerves_grove/Nerves.Grove.Potentiometer.html)
-[![Grove Sound Sensor](https://raw.githubusercontent.com/bendiken/nerves_grove/master/etc/photos/sensor-sound.png)](https://hexdocs.pm/nerves_grove/Nerves.Grove.Sensor.Sound.html)
-[![Grove Temperature Sensor](https://raw.githubusercontent.com/bendiken/nerves_grove/master/etc/photos/sensor-temperature.png)](https://hexdocs.pm/nerves_grove/Nerves.Grove.Sensor.Temperature.html)
+[![Grove Button][button.png]](https://hexdocs.pm/nerves_grove/Nerves.Grove.Button.html)
+[![Grove Buzzer][buzzer.png]](https://hexdocs.pm/nerves_grove/Nerves.Grove.Buzzer.html)
+[![Grove I2C ADC][i2c-adc.png]](https://hexdocs.pm/nerves_grove/Nerves.Grove.I2C.ADC.html)
+[![Grove LED][led.png]](https://hexdocs.pm/nerves_grove/Nerves.Grove.LED.html)
+[![Grove OLED Display 96×96][oled-display.png]](https://hexdocs.pm/nerves_grove/Nerves.Grove.OLED.Display.html)
+[![Grove Relay][relay.png]](https://hexdocs.pm/nerves_grove/Nerves.Grove.Relay.html)
+[![Grove Rotary Angle Sensor][potentiometer-rotary.png]](https://hexdocs.pm/nerves_grove/Nerves.Grove.Potentiometer.html)
+[![Grove Slide Potentiometer][potentiometer-slide.png]](https://hexdocs.pm/nerves_grove/Nerves.Grove.Potentiometer.html)
+[![Grove Sound Sensor][sensor-sound.png]](https://hexdocs.pm/nerves_grove/Nerves.Grove.Sensor.Sound.html)
+[![Grove Temperature Sensor][sensor-temperature.png]](https://hexdocs.pm/nerves_grove/Nerves.Grove.Sensor.Temperature.html)
+
+[button.png]:               https://raw.githubusercontent.com/bendiken/nerves_grove/master/etc/photos/button.png "Grove Button"
+[buzzer.png]:               https://raw.githubusercontent.com/bendiken/nerves_grove/master/etc/photos/buzzer.png "Grove Buzzer"
+[i2c-adc.png]:              https://raw.githubusercontent.com/bendiken/nerves_grove/master/etc/photos/i2c-adc.png "Grove I2C ADC"
+[led.png]:                  https://raw.githubusercontent.com/bendiken/nerves_grove/master/etc/photos/led.png "Grove LED"
+[oled-display.png]:         https://raw.githubusercontent.com/bendiken/nerves_grove/master/etc/photos/oled-display.png "Grove OLED Display 96×96"
+[relay.png]:                https://raw.githubusercontent.com/bendiken/nerves_grove/master/etc/photos/relay.png "Grove Relay"
+[potentiometer-rotary.png]: https://raw.githubusercontent.com/bendiken/nerves_grove/master/etc/photos/potentiometer-rotary.png "Grove Rotary Angle Sensor"
+[potentiometer-slide.png]:  https://raw.githubusercontent.com/bendiken/nerves_grove/master/etc/photos/potentiometer-slide.png "Grove Slide Potentiometer"
+[sensor-sound.png]:         https://raw.githubusercontent.com/bendiken/nerves_grove/master/etc/photos/sensor-sound.png "Grove Sound Sensor"
+[sensor-temperature.png]:   https://raw.githubusercontent.com/bendiken/nerves_grove/master/etc/photos/sensor-temperature.png "Grove Temperature Sensor"
 
 Reference
 ---------
