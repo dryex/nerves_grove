@@ -69,7 +69,7 @@ alias Nerves.Grove.I2C
 I2C.ADC.read_voltage(pid)
 ```
 
-### Seeed Studio [Grove LED](http://wiki.seeedstudio.com/wiki/Grove_-_LED)
+### Seeed Studio [Grove LED](http://wiki.seeedstudio.com/wiki/Grove_-_LED) and [Grove LED Socket Kit](http://wiki.seeedstudio.com/wiki/Grove_-_LED_Socket_Kit)
 
 [`Grove.LED`]: https://hexdocs.pm/nerves_grove/Nerves.Grove.LED.html
 
@@ -109,7 +109,7 @@ Relay.on(pid)   # start current flow
 Relay.off(pid)  # stop current flow
 ```
 
-### Seeed Studio [Grove Rotary Angle Sensor](http://wiki.seeedstudio.com/wiki/Grove_-_Rotary_Angle_Sensor)
+### Seeed Studio [Grove Rotary Angle Sensor](http://wiki.seeedstudio.com/wiki/Grove_-_Rotary_Angle_Sensor) and [Grove Slide Potentiometer](http://wiki.seeedstudio.com/wiki/Grove_-_Slide_Potentiometer)
 
 [`Grove.Potentiometer`]: https://hexdocs.pm/nerves_grove/Nerves.Grove.Potentiometer.html
 
