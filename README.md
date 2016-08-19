@@ -22,10 +22,13 @@ Supported Hardware
 [![Grove Button](https://raw.githubusercontent.com/bendiken/nerves_grove/master/etc/photos/button.png)](https://hexdocs.pm/nerves_grove/Nerves.Grove.Button.html)
 [![Grove Buzzer](https://raw.githubusercontent.com/bendiken/nerves_grove/master/etc/photos/buzzer.png)](https://hexdocs.pm/nerves_grove/Nerves.Grove.Buzzer.html)
 [![Grove I2C ADC](https://raw.githubusercontent.com/bendiken/nerves_grove/master/etc/photos/i2c-adc.png)](https://hexdocs.pm/nerves_grove/Nerves.Grove.I2C.ADC.html)
-[![](https://raw.githubusercontent.com/bendiken/nerves_grove/master/etc/photos/oled-display.png)](https://hexdocs.pm/nerves_grove/Nerves.Grove.OLED.Display.html)
-[![](https://raw.githubusercontent.com/bendiken/nerves_grove/master/etc/photos/relay.png)](https://hexdocs.pm/nerves_grove/Nerves.Grove.Relay.html)
-[![](https://raw.githubusercontent.com/bendiken/nerves_grove/master/etc/photos/sensor-sound.png)](https://hexdocs.pm/nerves_grove/Nerves.Grove.Sensor.Sound.html)
-[![](https://raw.githubusercontent.com/bendiken/nerves_grove/master/etc/photos/sensor-temperature.png)](https://hexdocs.pm/nerves_grove/Nerves.Grove.Sensor.Temperature.html)
+[![Grove LED](https://raw.githubusercontent.com/bendiken/nerves_grove/master/etc/photos/led.png)](https://hexdocs.pm/nerves_grove/Nerves.Grove.LED.html)
+[![Grove OLED Display 96×96](https://raw.githubusercontent.com/bendiken/nerves_grove/master/etc/photos/oled-display.png)](https://hexdocs.pm/nerves_grove/Nerves.Grove.OLED.Display.html)
+[![Grove Relay](https://raw.githubusercontent.com/bendiken/nerves_grove/master/etc/photos/relay.png)](https://hexdocs.pm/nerves_grove/Nerves.Grove.Relay.html)
+[![Grove Rotary Angle Sensor](https://raw.githubusercontent.com/bendiken/nerves_grove/master/etc/photos/potentiometer-rotary.png)](https://hexdocs.pm/nerves_grove/Nerves.Grove.Potentiometer.html)
+[![Grove Slide Potentiometer](https://raw.githubusercontent.com/bendiken/nerves_grove/master/etc/photos/potentiometer-slide.png)](https://hexdocs.pm/nerves_grove/Nerves.Grove.Potentiometer.html)
+[![Grove Sound Sensor](https://raw.githubusercontent.com/bendiken/nerves_grove/master/etc/photos/sensor-sound.png)](https://hexdocs.pm/nerves_grove/Nerves.Grove.Sensor.Sound.html)
+[![Grove Temperature Sensor](https://raw.githubusercontent.com/bendiken/nerves_grove/master/etc/photos/sensor-temperature.png)](https://hexdocs.pm/nerves_grove/Nerves.Grove.Sensor.Temperature.html)
 
 ### Seeed Studio [Grove Button](http://wiki.seeedstudio.com/wiki/Grove_-_Button)
 
