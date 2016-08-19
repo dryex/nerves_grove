@@ -16,6 +16,7 @@ Supported Hardware
 
 [![Grove Button][button.png]](https://hexdocs.pm/nerves_grove/Nerves.Grove.Button.html)
 [![Grove Buzzer][buzzer.png]](https://hexdocs.pm/nerves_grove/Nerves.Grove.Buzzer.html)
+[![Grove Collision Sensor][sensor-collision.png]](https://hexdocs.pm/nerves_grove/Nerves.Grove.Sensor.Collision.html)
 [![Grove I2C ADC][i2c-adc.png]](https://hexdocs.pm/nerves_grove/Nerves.Grove.I2C.ADC.html)
 [![Grove LED][led.png]](https://hexdocs.pm/nerves_grove/Nerves.Grove.LED.html)
 [![Grove OLED Display 96×96][oled-display.png]](https://hexdocs.pm/nerves_grove/Nerves.Grove.OLED.Display.html)
@@ -33,6 +34,7 @@ Supported Hardware
 [relay.png]:                https://raw.githubusercontent.com/bendiken/nerves_grove/master/etc/photos/relay.png "Grove Relay"
 [potentiometer-rotary.png]: https://raw.githubusercontent.com/bendiken/nerves_grove/master/etc/photos/potentiometer-rotary.png "Grove Rotary Angle Sensor"
 [potentiometer-slide.png]:  https://raw.githubusercontent.com/bendiken/nerves_grove/master/etc/photos/potentiometer-slide.png "Grove Slide Potentiometer"
+[sensor-collision.png]:     https://raw.githubusercontent.com/bendiken/nerves_grove/master/etc/photos/sensor-collision.png "Grove Collision Sensor"
 [sensor-sound.png]:         https://raw.githubusercontent.com/bendiken/nerves_grove/master/etc/photos/sensor-sound.png "Grove Sound Sensor"
 [sensor-temperature.png]:   https://raw.githubusercontent.com/bendiken/nerves_grove/master/etc/photos/sensor-temperature.png "Grove Temperature Sensor"
 
@@ -66,6 +68,18 @@ alias Nerves.Grove.Buzzer
 {:ok, pid} = Buzzer.start_link(pin)
 
 Buzzer.beep(pid, 0.1)  # make some noise for 100 ms
+```
+
+### Seeed Studio [Grove Collision Sensor](http://wiki.seeedstudio.com/wiki/Grove_-_Collision_Sensor)
+
+[`Grove.Sensor.Collision`]: https://hexdocs.pm/nerves_grove/Nerves.Grove.Sensor.Collision.html
+
+```elixir
+alias Nerves.Grove.Sensor
+
+{:ok, pid} = Sensor.Collision.start_link(pin)
+
+state = Sensor.Collision.read(pid)  # check if sensor was triggered
 ```
 
 ### Seeed Studio [Grove I2C ADC](http://wiki.seeedstudio.com/wiki/Grove_-_I2C_ADC)

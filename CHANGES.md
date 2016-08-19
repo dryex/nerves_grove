@@ -6,6 +6,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - Added `Grove.LED`.
 - Added `Grove.Potentiometer`.
+- Added `Grove.Sensor.Collision`.
 
 ## [0.4.0] - 2016-08-18
 ### Added
