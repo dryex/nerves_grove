@@ -11,11 +11,6 @@ Nerves.Grove
 [Grove](http://wiki.seeedstudio.com/wiki/Grove_System) module support for
 the [Nerves](http://nerves-project.org/) embedded software framework.
 
-Reference
----------
-
-https://hexdocs.pm/nerves_grove/
-
 Supported Hardware
 ------------------
 
@@ -29,6 +24,14 @@ Supported Hardware
 [![Grove Slide Potentiometer](https://raw.githubusercontent.com/bendiken/nerves_grove/master/etc/photos/potentiometer-slide.png)](https://hexdocs.pm/nerves_grove/Nerves.Grove.Potentiometer.html)
 [![Grove Sound Sensor](https://raw.githubusercontent.com/bendiken/nerves_grove/master/etc/photos/sensor-sound.png)](https://hexdocs.pm/nerves_grove/Nerves.Grove.Sensor.Sound.html)
 [![Grove Temperature Sensor](https://raw.githubusercontent.com/bendiken/nerves_grove/master/etc/photos/sensor-temperature.png)](https://hexdocs.pm/nerves_grove/Nerves.Grove.Sensor.Temperature.html)
+
+Reference
+---------
+
+https://hexdocs.pm/nerves_grove/
+
+Examples
+--------
 
 ### Seeed Studio [Grove Button](http://wiki.seeedstudio.com/wiki/Grove_-_Button)
 
@@ -93,18 +96,6 @@ OLED.Display.set_text_position(pid, 0, 0)
 OLED.Display.put_string(pid, "Hello, world")
 ```
 
-### Seeed Studio [Grove Rotary Angle Sensor](http://wiki.seeedstudio.com/wiki/Grove_-_Rotary_Angle_Sensor)
-
-[`Grove.Potentiometer`]: https://hexdocs.pm/nerves_grove/Nerves.Grove.Potentiometer.html
-
-```elixir
-alias Nerves.Grove.Potentiometer
-
-{:ok, pid} = Potentiometer.start_link(address)
-
-Potentiometer.read_value(pid)
-```
-
 ### Seeed Studio [Grove Relay](http://wiki.seeedstudio.com/wiki/Grove_-_Relay)
 
 [`Grove.Relay`]: https://hexdocs.pm/nerves_grove/Nerves.Grove.Relay.html
@@ -116,6 +107,18 @@ alias Nerves.Grove.Relay
 
 Relay.on(pid)   # start current flow
 Relay.off(pid)  # stop current flow
+```
+
+### Seeed Studio [Grove Rotary Angle Sensor](http://wiki.seeedstudio.com/wiki/Grove_-_Rotary_Angle_Sensor)
+
+[`Grove.Potentiometer`]: https://hexdocs.pm/nerves_grove/Nerves.Grove.Potentiometer.html
+
+```elixir
+alias Nerves.Grove.Potentiometer
+
+{:ok, pid} = Potentiometer.start_link(address)
+
+Potentiometer.read_value(pid)
 ```
 
 ### Seeed Studio [Grove Sound Sensor](http://wiki.seeedstudio.com/wiki/Grove_-_Sound_Sensor)
